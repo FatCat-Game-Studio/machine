@@ -42,6 +42,7 @@ html {
     height: 30px;
     display: inline-block;
     background: #000;
+    margin-right: 20px;
 }
 
 .footer-social li a i {
