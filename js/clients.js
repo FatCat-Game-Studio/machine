@@ -7,15 +7,16 @@ $(document).ready(function(){
         arrows: false,
         dots: false,
         pauseOnHover: false,
+        mobileFirst: true,
         responsive: [{
             breakpoint: 768,
             settings: {
                 slidesToShow: 4
             }
         }, {
-            breakpoint: 520,
+            breakpoint: 576,
             settings: {
-                slidesToShow: 3
+                slidesToShow: 2
             }
         }]
     });
