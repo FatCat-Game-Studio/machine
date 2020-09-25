@@ -116,6 +116,74 @@ html {
 @media (max-width: 800px) {
 }
 
+
+/* Machinery */
+
+#machinery {
+    /* display: grid; */
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.machinery {
+    max-width: 1150px;
+    display: flex;
+}
+
+.machinery .card {
+    background: #fff;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.machinery .card .img {
+    height: 200px;
+    width: 100%;
+}
+
+.machinery .card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.machinery .card .content {
+    padding: 10px 20px;
+}
+
+.card .content .title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card .content p {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.card .content .btn button {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card .content .btn button:hover {
+    transform: scale(0.9);
+}
+
+.owl-dots {
+    height: 15px;
+    
+}
+
 /* Cards */
 
 .card-wrapper {
