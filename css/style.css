@@ -179,11 +179,27 @@ html {
     transform: scale(0.9);
 }
 
-.owl-dots {
-    height: 15px;
-    
+.owl-dots{
+    text-align: center;
+    margin-top: 40px;
 }
 
+.owl-dot {
+    height: 15px;
+    width: 45px;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    margin: 0 5px;
+    border: 2px solid var(--primary-color)!important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot:hover,
+.owl-dot.active {
+    background: var(--primary-color)!important;
+
+}
 /* Cards */
 
 .card-wrapper {
