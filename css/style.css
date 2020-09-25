@@ -235,6 +235,65 @@ html {
   transform: rotateY(180deg);
 }
 
+/* Counter */
+
+.counterup-area{
+    background:#f9f9f9;
+    padding: 60px 0px;
+}
+.counterup-area h3{
+    text-align: center;
+    font-size: 30px;
+    margin:50px 0px;
+}
+.single-counterup{
+    display: inline-block;
+    width:25%;
+    margin:-2px;
+}
+.counterup-content{
+    text-align: center;
+    margin:20px;
+    padding:50px 20px;
+    transition: .4s;
+}
+.counterup-content i{
+    font-size:70px;
+}
+.counterup-content p{
+    font-size: 50px;
+    font-weight: 500;
+    margin:10px 0px;
+}
+.counterup-content h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.counterup-content:hover{
+    cursor:pointer;
+    color: var(--primary-color);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-counterup{
+        width:50%;
+    }
+
+}
+@media only screen and (max-width: 767px) {
+    .single-counterup{
+        width:50%;
+    }
+
+}
+
+@media only screen and (max-width: 479px) {
+    .single-counterup{
+        width:100%;
+    }
+}
+
 /* Timeline */
 
 .process-wrapper {
