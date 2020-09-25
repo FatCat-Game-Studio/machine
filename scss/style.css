@@ -1,0 +1,91 @@
+.office-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.office-details .detail-box-1 {
+  margin-top: 3%;
+  margin-left: 1.5%;
+  min-width: 30%;
+}
+
+.office-details .detail-box-1 .icon {
+  float: left;
+  font-size: 26px;
+  margin: 0 14px 0 0;
+  color: var(#fed03d);
+}
+
+.office-details .detail-box-1 .detail {
+  margin-top: 8px;
+}
+
+.office-details .detail-box-1 .detail strong {
+  color: var(#333);
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.office-details .detail-box-1 .detail span {
+  color: var(#747474);
+  font-size: 13px;
+}
+
+.office-details .detail-box-2 {
+  margin-top: 3%;
+  margin-left: 1.5%;
+  min-width: 40%;
+}
+
+.office-details .detail-box-2 .icon {
+  float: left;
+  font-size: 26px;
+  margin: 0 14px 0 0;
+  color: var(#fed03d);
+}
+
+.office-details .detail-box-2 .detail {
+  margin-top: 8px;
+}
+
+.office-details .detail-box-2 .detail strong {
+  color: var(#333);
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.office-details .detail-box-2 .detail span {
+  color: var(#747474);
+  font-size: 13px;
+}
+
+.office-details .detail-box-3 {
+  margin-top: 3%;
+  margin-left: 1.5%;
+  min-width: 20%;
+}
+
+.office-details .detail-box-3 .icon {
+  float: left;
+  font-size: 26px;
+  margin: 0 14px 0 0;
+  color: var(#fed03d);
+}
+
+.office-details .detail-box-3 .detail {
+  margin-top: 8px;
+}
+
+.office-details .detail-box-3 .detail strong {
+  color: var(#333);
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.office-details .detail-box-3 .detail span {
+  color: var(#747474);
+  font-size: 13px;
+}
+/*# sourceMappingURL=style.css.map */
