@@ -1,12 +1,16 @@
-$(document).ready(function(){
-    $('.logo-area').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        mobileFirst: true,
-    });
+$('.brand-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
 })
