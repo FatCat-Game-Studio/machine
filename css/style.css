@@ -169,10 +169,61 @@ html {
     border: 2px solid #000;
 }
 
+/* Information */
+
+.info {
+    background: #fff;
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding-top: 3%;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+}
+
+.info .info-padding {
+    margin-top: 42px;
+    margin-bottom: 20px;
+}
+
+.info .info-padding .info-background {
+    padding: 0px 15% 0px 15%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info-title h2{
+    text-align: center;
+    font-size: 26.355px;
+    line-height: 33.767px;
+    font-family: 'Raleway', sans-serif;
+    color: var(--dark-color);
+    margin: 0px 0px 13.1775px;
+}
+
+.info-separator {
+    border: 1px solid var(--primary-color);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 206px;
+}
+
+.info-text {
+    text-align: center;
+    color: #747474;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 0px 20px;
+    font-weight: 500;
+}
+
 /* Machinery */
 
 #machinery {
-    /* display: grid; */
     height: 100%;
     place-items: center;
     text-align: center;
@@ -291,7 +342,7 @@ html {
 /* Counter */
 
 .counterup-area{
-    background: var(--dark-text);
+    background-image: url(../img/bg.jpg);
     padding: 60px 0px;
 }
 .counterup-area h3{
@@ -317,7 +368,10 @@ html {
 
 .counterup-content .counter {
     color: var(--primary-color);
-
+    font-size: 60px;
+    line-height: normal;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
 }
 .counterup-content p{
     font-size: 50px;
@@ -329,6 +383,8 @@ html {
     text-transform: uppercase;
     color: white;
     font-weight: 500;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
 }
 .counterup-content:hover{
     cursor:pointer;
