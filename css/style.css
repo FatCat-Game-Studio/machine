@@ -194,11 +194,12 @@ html {
 }
 
 .info-title h2{
+    font-weight: 400;
     text-align: center;
     font-size: 26.355px;
     line-height: 33.767px;
     font-family: 'Raleway', sans-serif;
-    color: var(--dark-color);
+    color: #333;
     margin: 0px 0px 13.1775px;
 }
 
@@ -219,6 +220,18 @@ html {
     font-family: 'Raleway', sans-serif;
     margin: 0px 0px 20px;
     font-weight: 500;
+}
+
+/* Our Values */
+
+.values-container {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.value-container {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Machinery */
