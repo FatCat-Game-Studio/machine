@@ -173,6 +173,7 @@ html {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
     font-weight: 400;
+    transition: .3s ease-in;
 }
 
 .fusion-button:hover{
@@ -734,6 +735,7 @@ h2 span {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 300;
+  transition: .3s ease-in;
 }
 
 .link-area li a:hover {
@@ -773,6 +775,7 @@ h2 span {
 .footer-social li a i {
   color: var(--light-text);
   padding: 8px;
+  transition: .3s ease-in;
 }
 
 .footer-social li a i:hover {
