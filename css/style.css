@@ -799,3 +799,12 @@ h2 span {
   font-weight: 600;
   color: var(--dark-text);
 }
+
+.btn-default{
+  background-color: #feb600;
+  transition:.3s ease-in;
+}
+
+.btn-default:hover{
+  background-color: var(--primary-color);
+}

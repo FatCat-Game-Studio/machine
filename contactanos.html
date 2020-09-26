@@ -15,10 +15,7 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <link
-      href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
+    <link href="/css/fontawesome/css/all.css" rel="stylesheet"> 
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Raleway:ital,wght@0,300;0,500;0,700;1,400&display=swap"
       rel="stylesheet"
@@ -77,7 +74,7 @@
         </div>
       </div>
     </div>
-    <!-- Need to add navbar -->
+    <!-- Navbar -->
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -102,12 +99,84 @@
             <li class="nav-item active">
               <a class="nav-link" href="contactanos.html">Contactenos</a>
             </li>
-
           </ul>
         </div>
       </nav>
     </div>
 
+    <section class="info">
+      <div class="info-padding">
+        <div class="info-background">
+          <div class="info-title">
+            <h2>Contáctate con Nosotros</h2>
+          </div>
+          <div class="info-separator"></div>
+
+          <div class="col-md-6 col-md-6 mx-auto">
+            <p class="form-message"></p>
+            <div class="contact-form">
+              <!-- Form Begins -->
+              <form
+                role="form"
+                name="contactform"
+                id="contactform"
+                method="post"
+                action="php/contact-form.php"
+              >
+                <div class="row">
+                  <div class="col-md-6">
+                    <!-- Field 1 -->
+                    <div class="input-text form-group">
+                      <input
+                        type="text"
+                        name="contact_name"
+                        class="input-name form-control"
+                        placeholder="Nombre Completo"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <!-- Field 2 -->
+                    <div class="input-email form-group">
+                      <input
+                        type="email"
+                        name="contact_email"
+                        class="input-email form-control"
+                        placeholder="Email"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- Field 3 -->
+                <div class="input-email form-group">
+                  <input
+                    type="text"
+                    name="contact_phone"
+                    class="input-phone form-control"
+                    placeholder="Teléfono"
+                  />
+                </div>
+                <!-- Field 4 -->
+                <div class="textarea-message form-group">
+                  <textarea
+                    name="contact_message"
+                    class="textarea-message form-control"
+                    placeholder="Mensaje"
+                    rows="6"
+                  ></textarea>
+                </div>
+                <!-- Button -->
+                <button class="btn btn-default" type="submit">
+                  Enviar <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+              <!-- Form Ends -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <footer>
       <div id="footer-area">
@@ -187,9 +256,6 @@
                 <h3>Ubícanos</h3>
                 <ul class="link-area widget list-inline">
                   <li>
-                    <!-- <a href="#">
-                                          <img src="img/photo.png" alt="">
-                                      </a> -->
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62427.46441322061!2d-77.0296179!3d-12.0630149!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9b486fca793%3A0xb7547b098dfc4467!2sBenem%C3%A9rita%20Guardia%20Civil!5e0!3m2!1ses-419!2spe!4v1601008749119!5m2!1ses-419!2spe"
                       width="300"
