@@ -250,8 +250,7 @@ html {
 
 /* Cards */
 .cards-container {
-  justify-content: space-evenly;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
   height: 550px;
   background: white;
   padding-top: 0px;
@@ -259,6 +258,11 @@ html {
   padding-bottom: 80px;
   padding-left: 8%;
 }
+
+.card-group-container{
+  justify-content: space-evenly;
+}
+
 .card-container{
 	position: relative;
 	width: 18rem;
@@ -310,7 +314,7 @@ html {
   border: 1px solid #333;
   border-radius: 50%;
   background-clip: padding-box;
-  margin: 0 110px 10px 110px;
+  margin: auto;
 }
 
 .card.card-front i {
