@@ -248,99 +248,27 @@ html {
     padding-right: 15px;
 }
 
-/* Machinery */
-
-#machinery {
-    height: 100%;
-    place-items: center;
-    text-align: center;
-    background: #f2f2f2;
-    margin-top: 100px;
-}
-
-.machinery {
-    max-width: 1150px;
-    display: flex;
-}
-
-.machinery .card {
-    background: #fff;
-    flex: 1;
-    margin: 0 10px;
-}
-
-.machinery .card .img {
-    height: 200px;
-    width: 100%;
-}
-
-.machinery .card .img img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.machinery .card .content {
-    padding: 10px 20px;
-}
-
-.card .content .title {
-    font-size: 25px;
-    font-weight: 600;
-}
-
-.card .content p {
-    text-align: left;
-    margin: 10px 0;
-}
-
-.card .content .btn button {
-    background-color: var(--primary-color);
-    color: var(--dark-color);
-    border: none;
-    outline: none;
-    font-size: 17px;
-    padding: 5px 8px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.card .content .btn button:hover {
-    transform: scale(0.9);
-}
-
-.owl-dots{
-    text-align: center;
-    margin-top: 40px;
-}
-
-.owl-dot {
-    height: 15px;
-    width: 45px;
-    border-radius: 25px;
-    cursor: pointer;
-    outline: none;
-    margin: 0 5px;
-    border: 2px solid var(--primary-color)!important;
-    transition: all 0.3s ease;
-}
-
-.owl-dot:hover,
-.owl-dot.active {
-    background: var(--primary-color)!important;
-
-}
 /* Cards */
 .cards-container {
   justify-content: space-evenly;
-  margin-bottom: 60px;
+  margin-bottom: 200px;
+  height: 550px;
+  background: white;
+  padding-top: 0px;
+  padding-right: 8%;
+  padding-bottom: 80px;
+  padding-left: 8%;
 }
 .card-container{
 	position: relative;
 	width: 18rem;
 	perspective: 200rem;
-	height: 412px;
+  min-height: 412px;
+  padding: 0px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
 }
 
 .card-container:hover .card-front{
@@ -364,7 +292,38 @@ html {
 }
 
 .card-back .card-body{
-	position: relative;
+  position: relative;
+}
+
+.card.card-front {
+  background: rgb(245, 245, 245);
+}
+
+.space {
+  margin-top: 114px;
+}
+
+.circle {
+  background-color: #333;
+  height: 64px;
+  width: 64px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  background-clip: padding-box;
+  margin: 0 110px 10px 110px;
+}
+
+.card.card-front i {
+  font-size: 30px;
+  color: var(--primary-color);
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 18px;
+  margin-top: 15px;
+}
+
+.card.card-back .card-body {
+  background: var(--primary-color);
 }
 
 .card-body a{
@@ -374,8 +333,10 @@ html {
 	margin: -15% 0 0 -23%;
 }
 
-.card-text {
+.card-body h5{
   font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  text-align: center;
 }
 
 /* Counter */
