@@ -7,10 +7,13 @@
   --dark-color: #1e1e1e;
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 html {
@@ -208,9 +211,9 @@ html {
 }
 
 .info-title h2{
-    font-weight: 400;
+    font-weight: 300;
     text-align: center;
-    font-size: 26.355px;
+    font-size: 32px;
     line-height: 33.767px;
     font-family: 'Raleway', sans-serif;
     color: #333;
@@ -238,25 +241,112 @@ html {
 
 /* Our Values */
 
+.info.values {
+  background-color: #f5f5f5;
+}
+
+.our-values {
+  margin-top: 30px;
+}
+
 .values-container {
-    margin-top: 20px;
+    margin-top: 60px;
     margin-bottom: 60px;
+    display: flex;
 }
 
 .value-container {
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto;
+}
+
+.value-container::before {
+  transform: translateY(-20%) scale(1.1);
+  transition: opacity 75ms linear, background-color 100ms linear;
+}
+
+.value-container:hover::after {
+  background: #f00;
+  z-index: 1;
+  animation: pulse 1250ms infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+}
+
+.value-container:hover {
+  animation
+}
+
+.value-icon {
+  color: #fff;
+  font-size: 60px;
+  border-radius: 50%;
+  line-height: 120px;
+  height: 120px;
+  width: 120px;
+  display: flex;
+}
+
+.value-icon.colour-1 {
+  background-color: #4ea4a5;
+}
+
+.value-icon.colour-2 {
+  background-color: #4e6da5;
+}
+
+.value-icon.colour-3 {
+  background-color: #f6722a;
+}
+
+.value-icon.colour-4 {
+  background-color: #a7cf47;
+}
+
+.value-icon i {
+  margin: auto;
+}
+
+.value-text {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  line-height: 21px;
+  text-align: center;
+  margin: 15px 0 15px 0;
+}
+
+.value-separator {
+  max-width: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #8f8f8f;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Cards */
 .cards-container {
-  /* margin-bottom: 200px; */
   height: 550px;
   background: white;
   padding-top: 0px;
   padding-right: 8%;
   padding-bottom: 80px;
   padding-left: 8%;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
 }
 
 .card-group-container{
@@ -318,7 +408,7 @@ html {
 }
 
 .card.card-front i {
-  font-size: 30px;
+  font-size: 25px;
   color: var(--primary-color);
   display: flex;
   justify-content: center;
@@ -327,6 +417,12 @@ html {
 
 .card.card-back .card-body {
   background: var(--primary-color);
+}
+
+.card-body {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
 }
 
 .card-body a{
@@ -576,73 +672,6 @@ html {
   100% {
     transform: translateY(0px);
     opacity: 1;
-  }
-}
-
-/* Slider clients */
-
-.client-area .container h2 {
-  text-align: center;
-  padding: 0 0 70px;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 70px;
-}
-
-h2 span {
-  color: var(--primary-color);
-}
-
-.client-area {
-  padding: 150px 0 0;
-}
-
-.slick-slide {
-  margin: 0 20px;
-}
-
-.slick-slide img {
-  width: 100%;
-}
-
-.slick-list {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-.slick-list:focus {
-  outline: none;
-}
-
-.slick-slide {
-  display: none;
-  float: left;
-  height: 100%;
-  min-height: 1px;
-}
-
-.slick-slide img {
-  display: block;
-}
-
-.slick-initialized .slick-slide {
-  display: block;
-}
-
-.slick-loading .slick-slide {
-  visibility: hidden;
-}
-
-@media (max-width: 800px) {
-  .client-area {
-    padding: 0;
-  }
-  h2 {
-    padding: 70px 0 50px;
-    font-size: 40px;
   }
 }
 
