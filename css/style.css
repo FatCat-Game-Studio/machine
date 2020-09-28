@@ -261,32 +261,6 @@ html {
     margin: 0 auto;
 }
 
-.value-container::before {
-  transform: translateY(-20%) scale(1.1);
-  transition: opacity 75ms linear, background-color 100ms linear;
-}
-
-.value-container:hover::after {
-  background: #f00;
-  z-index: 1;
-  animation: pulse 1250ms infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(0.95);
-    opacity: 0.75;
-  }
-  100% {
-    transform: scale(1.35);
-    opacity: 0;
-  }
-}
-
-.value-container:hover {
-  animation
-}
-
 .value-icon {
   color: #fff;
   font-size: 60px;
@@ -295,6 +269,7 @@ html {
   height: 120px;
   width: 120px;
   display: flex;
+	cursor: pointer;
 }
 
 .value-icon.colour-1 {
@@ -311,6 +286,30 @@ html {
 
 .value-icon.colour-4 {
   background-color: #a7cf47;
+}
+
+.value-container:hover {
+  color: var(--primary-color);
+}
+
+.value-icon:hover {
+  animation: animate 2s linear infinite;
+  background-color: var(--primary-color);
+}
+
+@keyframes animate{
+  0%{
+    box-shadow: 0 0 0 0 rgba(255,206,67,0.7);
+  }
+  40%{
+    box-shadow: 0 0 0 50px rgba(255,26,67,0);
+  }
+  80%{
+    box-shadow: 0 0 0 50px rgba(255,206,67,0);
+  }
+  100%{
+    box-shadow: 0 0 0 rgba(255,206,67,0);
+  }
 }
 
 .value-icon i {
