@@ -88,8 +88,19 @@
 /* HERO END */
 
 /* HERO BOTTOM */
-.hero-bottom {
+
+#hero-bottom {
   height: 110px;
+}
+
+.hero-details {
+  height: 50px;
+}
+.hero-bottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  bottom: 50px;
 }
 
 .item-box h4 {
@@ -98,14 +109,27 @@
   line-height: 1.7;
   text-transform: uppercase;
   color: white;
+  display: inline-block;
 }
 
 .icon-dollar {
   height: 50px;
   width: 50px;
   background-color: var(--primary-color);
-  color: var(--dark-text);
+  margin-top: 0;
+  margin-right: 15px;
+  display: inline-flex;
+}
+
+.icon-dollar i {
+  color: #333;
   font-size: 22px;
+  margin: 0 auto;
+  align-self: center;
+}
+
+.hero-btn {
+  float: right;
 }
 
 /* Our Values */
