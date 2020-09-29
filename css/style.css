@@ -142,7 +142,8 @@ svg {
 
 .slider-container {
   position: relative;
-  height: 80%;
+  /* height: 80%; */
+  height:500px;
   margin:auto;
   user-select: none;
   cursor: all-scroll;
@@ -620,7 +621,7 @@ svg {
 .cards-container {
   height: 550px;
   background: white;
-  padding-top: 0px;
+  padding-top: 5%;
   padding-right: 8%;
   padding-bottom: 80px;
   padding-left: 8%;
