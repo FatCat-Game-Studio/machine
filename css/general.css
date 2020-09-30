@@ -118,11 +118,10 @@ html {
   font-size: 13px;
 }
 
-@media (max-width: 800px) {
-}
+@media (max-width: 800px) {}
 
 /* ============ desktop view ============ */
-.navbar-nav > li {
+.navbar-nav>li {
   padding-right: 5px;
   margin-right: 5px;
   background-image: url(../img/points.png);
@@ -142,12 +141,15 @@ html {
   .navbar .nav-item .dropdown-menu {
     display: none;
   }
+
   .navbar .nav-item:hover .nav-link {
     color: #fff;
   }
+
   .navbar .nav-item:hover .dropdown-menu {
     display: block;
   }
+
   .navbar .nav-item .dropdown-menu {
     margin-top: 0;
   }
@@ -212,6 +214,7 @@ html {
   padding: 90px 0 0 0;
   background: var(--dark-color);
   color: var(--light-color);
+  overflow: hidden;
 }
 
 .btn-footer {
